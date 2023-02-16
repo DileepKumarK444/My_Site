@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    gap:20px;
+}
+
+@media only screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+    .right .col-sm-12, .right .col-12{
+        padding: 0;
+    }
+}
+.container .left{
+    flex: 4;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.container .right{
+    flex: 2;
+}
+.user-details{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    background: #fff;
+    align-items: center;
+    border-radius: 6px;
+    webkit-box-shadow: 0px 1px 2px 1px rgb(154 154 204 / 22%);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+    box-shadow: 0px 1px 2px 1px rgb(154 154 204 / 22%);
+
+}
+.user-content span{
+    font-size: 18px;
+    color: teal;
+    font-weight: 500;
+}
+
+.btn-div{
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:10px;
+
+}
+.user-action{
+    display: flex;
+    flex-direction: column;
+}
+.user-action i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.user-action i:first-child{
+    color: #ff407b;
+}
+.user-action i:last-child{
+    color: #25d5f2;
+}
